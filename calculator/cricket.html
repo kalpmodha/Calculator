@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>cricket game</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  <button onclick="
+  
+  const userChoiseMsg = 'you have chosen bat';
+  let randomNumber = Math.random() * 3;
+  let computerChoise;
+  if(randomNumber > 0 && randomNumber <= 1){ 
+    computerChoise = 'Bat';
+} else if(randomNumber > 1 && randomNumber <= 2){
+   computerChoise = 'Ball';
+}
+else{
+  computerChoise = 'Stump';
+}
+console.log(`computer choise is ${computerChoise}`);
+
+if(computerChoise === 'Ball'){
+  console.log('user won');
+}
+
+else if(computerChoise === 'Ball'){
+  console.log('it is tie')
+}
+else if(computerChoise === 'stump'){
+  console.log('computer has won')
+}
+
+alert(``)
+  
+  ">Bat</button>
+  <button>Ball</button>
+  <button>Stump</button>
+</body>
+</html>
